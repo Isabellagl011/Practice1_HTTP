@@ -1,0 +1,95 @@
+###
+POST http://localhost:5000/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Valentina ",
+  "lastname":"Alavarez",
+  "dni":"676545",
+  "address":[{
+    "city":"Bogota",
+    "code_zip":170003,
+    "geo":[-6.125152,8.23923]
+  }]
+}
+###
+GET http://localhost:5000/api/v1/people HTTP/1.1
+###
+GET http://localhost:5000/api/v1/people/623b6f9c0deb2b011d208131 HTTP/1.1
+###
+PUT http://localhost:5000/api/v1/people/623b6f9c0deb2b011d208131 HTTP/1.1
+Content-Type: application/json
+
+{
+  "address":[{
+    "city":"Bereira",
+    "code_zip":170005,
+    "geo":[-6.125152,8.23923]
+  }]
+}
+###
+DELETE http://localhost:5000/api/v1/people/623b6f9c0deb2b011d208131 HTTP/1.1
+
+//superheroes v1
+###
+POST http://localhost:5000/api/v1/superheroes/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero":"Batman",
+  "real_name":"peter parker",
+  "feature":[{
+    "universe":"alteruniverse",
+    "super_powers":["volar","lectura mental"]
+  }],
+   "superhero_sidekick":[{
+    "sidekick":"alteruniverse",
+    "side_powers":["vision laser","invisibilidad                                                                                                                                                                                           "]
+  }]
+
+}
+###
+GET http://localhost:5000/api/v1/superheroes HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/superheroes/623d1818c75c2d69a55ddb98 HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/superheroes/623d1c607abb3e2231fc3830 HTTP/1.1
+Content-Type: application/json
+
+{
+ "superhero":"Spider-Man",
+  "real_name":"peter parker"
+}
+###
+DELETE http://localhost:5000/api/v1/superheroes/623c8d1c89a528efa69656e0 HTTP/1.1
+
+//superheroes v2
+
+###
+POST http://localhost:5000/api/v1/superheroes_v2/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero":"Shreck",
+  "realname":"Alejandro",
+  "superpower":"Be green"
+}
+###
+GET http://localhost:5000/api/v1/superheroes_v2 HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/superheroes_v2/624450804fe6b0810f8f64ad HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/superheroes_v2/624450804fe6b0810f8f64ad HTTP/1.1
+Content-Type: application/json
+
+{
+ "superhero":"Wonder-woman",
+  "realname":"wonder woman",
+  "superpower":"Be honest "
+}
+###
+DELETE http://localhost:5000/api/v1/superheroes_v2/624450804fe6b0810f8f64ad  HTTP/1.
