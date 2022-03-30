@@ -92,4 +92,4 @@ Content-Type: application/json
   "superpower":"Be honest "
 }
 ###
-DELETE http://localhost:5000/api/v1/superheroes_v2/624450804fe6b0810f8f64ad  HTTP/1.
+DELETE http://localhost:5000/api/v1/superheroes_v2/624450804fe6b0810f8f64ad  HTTP/1.1
