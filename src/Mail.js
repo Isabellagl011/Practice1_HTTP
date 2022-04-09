@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey('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')
+sgMail.setApiKey('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');
 
 function sendEmailConfirmationHTML(customerName,orderNro){
   return `<!DOCTYPE html>
@@ -17,13 +17,13 @@ function sendEmailConfirmationHTML(customerName,orderNro){
 
   </div>
 </body>
-</html>`;
+</html>`
 }
 
 function getMessage(emailParams){
   return{
-    to:emailParams.toEmail,
-    from: 'isabella.grajalesl@autonoma.edu.co',
+    from :'isabella.grajalesl@autonoma.edu.co',
+    to:'isabella.grajalesl@autonoma.edu.co',
     subject:'Confirmación orden de compra Black Friday',
     text:`Hola ${emailParams.customerName},Te enviamos las imágenes de los productos comprados , yla
     factura con número ${emailParams.orderNro}. Gracias por tu compra`,
